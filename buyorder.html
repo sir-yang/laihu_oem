@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>OEM-加入购物车</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/buyorder.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header>
+      <div class="head-box container no-pad">
+        <a class="head-logo" href="javascript:;">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        
+        <div class="flex-end flex-1">
+          <ul class="head-nav no-mar flex-start flex-items">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="application.html">应用</a></li>
+            <li><a href="cases.html">案例</a></li>
+            <li><a href="template.html">模板</a></li>
+            <li><a href="aboutus.html">关于</a></li>
+            <li><a href="news.html">动态</a></li>
+            <li><a href="javascript:;">帮助</a></li>
+          </ul>
+
+          <div class="head-rt ml-30 flex-center flex-items">
+            <button type="button" class="c-active">登录</button>
+            <button type="button" class="bg-active c-fff">注册</button>
+            <div class="cart-box flex-center flex-items">
+              <img src="images/cart_icon.png" alt="">
+              <span class="bubble radius-100">1</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="or_content bg-f8">
+      <div class="container no-pad">
+        <h3 class="tit">小程序结算-账户可用余额：<span class="c-orange">￥600</span></h3>
+
+        <form action="">
+          <div class="form_box">
+            <div class="item_box flex-start flex-items">
+              <div class="label_lf">
+                <span class="c-orange">*</span>
+                <span>小程序名称：</span>
+              </div>
+              <div>
+                <input type="text">
+                <span class="f12 c-666">（开通后可修改）</span>
+              </div>
+            </div>
+            <div class="item_box flex-start flex-items">
+              <div class="label_lf">开通产品名：</div>
+              <div class="">基础版小程序</div>
+            </div>
+            <div class="item_box flex-start flex-items">
+              <div class="label_lf">购买年限：</div>
+              <div>
+                <select name="" id="">
+                  <option value="">￥480/1年</option>
+                </select>
+              </div>
+            </div>
+            <div class="item_box flex-start flex-items">
+              <div class="label_lf">开通类型：</div>
+              <div class="flex-start choose-type">
+                <div class="mr-30">
+                  <input type="radio" name="type" hidden id="buy">
+                  <i class="radius-100 active"><span class="glyphicon glyphicon-ok"></span></i>
+                  <label for="buy">正式购买</label>
+                </div>
+                <div>
+                  <input type="radio" name="type" hidden id="fee">
+                  <i class="radius-100"><span class="glyphicon glyphicon-ok"></span></i>
+                  <label for="fee">免费试用7天</label>
+                </div>
+              </div>
+            </div>
+            <div class="item_box flex-start flex-items">
+              <div class="label_lf">合计费用：</div>
+              <div class="c-orange"><strong>￥480</strong></div>
+            </div>
+          </div>
+
+          <!-- <button type="button" class="bg-active">去购物车结算</button> -->
+          <a href="cart.html" class="bg-active">去购物车结算</a>
+        </form>
+
+      </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+      <div class="footer bg-fot c-fff">
+        <div class="no-pad container flex-between flex-items">
+          <div class="footer_lf flex-1">
+            <div class="flex-start flex-items mb-20">
+              <img src="images/f_phone.png" alt="">
+              <span class="f30 ml-10">400-028-5800</span>
+            </div>
+
+            <div class="f14 c-fff">
+              <label>公司名称：</label>
+              <span>成都西维数码科技有限公司</span>
+            </div>
+            <div class="f14 c-fff">
+              <label>公司地址：</label>
+              <span>四川省成都市金牛区一环路北一段99号环球广场24F</span>
+            </div>
+            <div class="f14 c-fff">
+              <label>电话总机：</label>
+              <span>028-62778（20线）</span>
+            </div>
+          </div>
+
+          <div class="footer_rg flex-start">
+            <div>
+              <img src="images/qr_code.png" alt="">
+              <p class="text-center mt-10">官方小程序</p>
+            </div>
+            <div class="ml-20">
+              <img src="images/qr_code.png" alt="">
+              <p class="text-center mt-10">微信公众号</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.choose-type').find('input:radio').change(function() {
+        $('.choose-type').find('input:radio').each(function() {
+          if ($(this).prop('checked')) {
+            $(this).next('i').addClass('active');
+          } else {
+            $(this).next('i').removeClass('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
